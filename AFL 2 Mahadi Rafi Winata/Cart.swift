@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+//Protocol
 protocol Cart{
     func printMenu()
     func addMenu(key: String)
