@@ -25,7 +25,6 @@ public class fnbMenu: Cart{
     }
     
     func checkMenu(key: String) -> String{
-        print(key)
         for (keyCheck,_name) in foodList{
             print("\(key), \(keyCheck)")
             if key == keyCheck {
