@@ -32,13 +32,12 @@ public class fnbMenu: Cart{
                 return _name
             }
         }
-                for (keyCheck,_name) in bevList{
-                    print("\(key), \(keyCheck)")
-                    if key == keyCheck {
-                        return _name
-                    }
-                }
+        for (keyCheck,_name) in bevList{
+            print("\(key), \(keyCheck)")
+            if key == keyCheck {
+                return _name
             }
+        }
         return "0"
     }
     
@@ -72,7 +71,7 @@ public class fnbMenu: Cart{
                 found = 1
                 print("Insert the new menu name: ")
                 let newName = String(readLine()!)
-                foodList[key] = newName
+                bevList[key] = newName
                 print("Successfully changed the menu!")
             }
         }

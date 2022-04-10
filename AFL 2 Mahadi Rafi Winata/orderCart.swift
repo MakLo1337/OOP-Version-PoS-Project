@@ -28,16 +28,14 @@ public class orderCart: Cart{
     }
     
     func addMenu(key: String) {
-        let menu = fnbMenu()
-        let menuCheck = menu.checkMenu(key: key)
-        print(menu.checkMenu(key: key))
-        if menuCheck == "0"{
+
+        if key == "0"{
             print("Code not match with any food or beverage!")
         } else {
-            print("How many \(menuCheck) you want to buy? ")
+            print("How many \(key) you want to buy? ")
             let quantity = Int(readLine(strippingNewline: true)!)!
-            shopCart.append("\(quantity) \(menuCheck)")
-            print("\(quantity) \(menuCheck) added to your cart")
+            shopCart.append("\(quantity) \(key)")
+            print("\(quantity) \(key) added to your cart")
         }
         
     }

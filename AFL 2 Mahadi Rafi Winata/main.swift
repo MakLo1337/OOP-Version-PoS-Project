@@ -43,8 +43,8 @@ while(readMenu != "x" && readMenu != "X"){
                 print("")
                 print("")
             } else {
-                cart.addMenu(key: readOrder)
-                cart.printMenu()
+                let menuCheck = menu.checkMenu(key: readOrder)
+                cart.addMenu(key: menuCheck)
             }
         }
     case "2":
